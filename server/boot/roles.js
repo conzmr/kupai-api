@@ -2,6 +2,7 @@ module.exports = app => {
     let Role = app.models.Role;
     let RoleMapping = app.models.RoleMapping;
     let Admin = app.models.Admin;
+    let RestaurantUser = app.models.RestaurantUser;
   
     Role.findOne(
         {
@@ -28,9 +29,45 @@ module.exports = app => {
                         },
                         function(err, principal) {
                           if (err) {
-                            console.log("ERROR CREATING ROLES", err)
-                          } else {
-                              console.log("SUCCESS", principal)
+                            console.log("ERROR CREATING ADMIN ROLES", err)
+                          }
+                        }
+                      );
+                    }
+                  });
+                }
+              }
+            );
+          }
+        }
+    );
+
+    Role.findOne(
+        {
+          where: {
+            name: "RESTAURANT_ADMIN"
+          }
+        },
+        (err, role) => {
+          if (err) debug(err);
+          if (!role) {
+            Role.create(
+              {
+                name: "RESTAURANT_ADMIN"
+              },
+              (err, role) => {
+                if (err) {
+                } else {
+                  RestaurantUser.find({}, (err, users) => {
+                    for (var u in users) {
+                      role.principals.create(
+                        {
+                          principalType: RoleMapping.USER,
+                          principalId: users[u].id
+                        },
+                        function(err, principal) {
+                          if (err) {
+                            console.log("ERROR CREATING RESTAURANT ADMIN ROLES", err)
                           }
                         }
                       );

@@ -26,8 +26,6 @@ module.exports = function(Admin) {
                     roleId: role.id
                 },
                 function(err, roleMapping) {
-                    console.log("HOOK ADMIN err", err)
-                    console.log("HOOK ADMIN roleMapping", roleMapping)
                   if (err) next(err);
                   next();
                 }
