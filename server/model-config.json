@@ -16,8 +16,8 @@
   "User": {
     "dataSource": "db"
   },
-  "AccessToken": {
-    "dataSource": "db",
+  "AccessToken": { 
+    "dataSource": "mongo",
     "public": false
   },
   "ACL": {
@@ -25,14 +25,14 @@
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongo",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongo", 
     "public": false
   },
   "Coupon": {
