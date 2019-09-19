@@ -42,5 +42,9 @@
   "Restaurant": {
     "dataSource": "mongo",
     "public": true
+  },
+  "RestaurantUser": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
