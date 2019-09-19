@@ -3,6 +3,7 @@ module.exports = app => {
     let RoleMapping = app.models.RoleMapping;
     let Admin = app.models.Admin;
     let RestaurantUser = app.models.RestaurantUser;
+    let AppUser = app.models.AppUser;
   
     Role.findOne(
         {
@@ -79,4 +80,42 @@ module.exports = app => {
           }
         }
     );
+
+    Role.findOne(
+      {
+        where: {
+          name: "APP_USER"
+        }
+      },
+      (err, role) => {
+        if (err) debug(err);
+        if (!role) {
+          Role.create(
+            {
+              name: "APP_USER"
+            },
+            (err, role) => {
+              if (err) {
+              } else {
+                AppUser.find({}, (err, users) => {
+                  for (var u in users) {
+                    role.principals.create(
+                      {
+                        principalType: RoleMapping.USER,
+                        principalId: users[u].id
+                      },
+                      function(err, principal) {
+                        if (err) {
+                          console.log("ERROR CREATING RESTAURANT APP_USER ROLES", err)
+                        }
+                      }
+                    );
+                  }
+                });
+              }
+            }
+          );
+        }
+      }
+  );
 };
