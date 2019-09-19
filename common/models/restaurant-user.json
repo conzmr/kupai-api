@@ -7,7 +7,16 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "restaurants": {
+      "type": "hasOne",
+      "model": "Restaurant",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": false
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
