@@ -58,5 +58,9 @@
   "Category": {
     "dataSource": "mongo",
     "public": true
+  },
+  "AppUser": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
