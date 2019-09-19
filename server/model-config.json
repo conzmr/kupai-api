@@ -62,5 +62,9 @@
   "AppUser": {
     "dataSource": "mongo",
     "public": true
+  },
+  "RedeemedCoupon": {
+    "dataSource": "mongo",
+    "public": false
   }
 }

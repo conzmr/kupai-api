@@ -1,0 +1,30 @@
+{
+  "name": "RedeemedCoupon",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "redeemedAt": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "appUser": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": ""
+    },
+    "coupon": {
+      "type": "belongsTo",
+      "model": "Coupon",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
