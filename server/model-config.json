@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Coupon": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Restaurant": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
