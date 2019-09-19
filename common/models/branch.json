@@ -1,0 +1,42 @@
+{
+  "name": "Branch",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "geolocation": {
+      "type": "geopoint",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "Restaurant",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

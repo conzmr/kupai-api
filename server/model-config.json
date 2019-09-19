@@ -50,5 +50,9 @@
   "Admin": {
     "dataSource": "mongo",
     "public": true
+  },
+  "Branch": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
