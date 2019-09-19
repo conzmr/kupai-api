@@ -54,5 +54,9 @@
   "Branch": {
     "dataSource": "mongo",
     "public": true
+  },
+  "Category": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
