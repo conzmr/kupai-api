@@ -3,17 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "mongo": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "kupai",
-    "password": "",
-    "name": "mongo",
-    "user": "",
-    "useNewUrlParser": true,
-    "connector": "mongodb"
-  },
   "kupaidb": {
     "url": "mongodb+srv://kupai-admin:kupai@cluster0-uzkmh.mongodb.net/kupai?retryWrites=true&w=majority",
     "connector": "mongodb"
