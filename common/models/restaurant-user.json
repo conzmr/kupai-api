@@ -29,7 +29,10 @@
       "principalType": "ROLE",
       "principalId": "ADMIN",
       "permission": "ALLOW",
-      "property": ["create", "find"]
+      "property": [
+        "create",
+        "find"
+      ]
     },
     {
       "accessType": "*",

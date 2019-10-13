@@ -1,4 +1,5 @@
 module.exports = app => {
+  return;
     let Role = app.models.Role;
     let RoleMapping = app.models.RoleMapping;
     let Admin = app.models.Admin;
@@ -83,7 +84,7 @@ module.exports = app => {
 
     Role.findOne(
       {
-        where: {
+        where: { 
           name: "APP_USER"
         }
       },

@@ -4,6 +4,11 @@ module.exports = app => {
     console.log("-------------------------------------");
     let Admin = app.models.Admin;
 
+    Admin.find({}, (err, res)=> {
+        console.log("admin err", err)
+        console.log("admin resr", res)
+    })  
+
     // Admin.create({
     //     email: "madrigalreyes.c@gmail.com",
     //     password: "Madrigal1821*"
