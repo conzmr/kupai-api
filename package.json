@@ -2,9 +2,7 @@
   "name": "kupai-api",
   "version": "1.0.0",
   "main": "server/server.js",
-  "engines": {
-    "node": "0.10.x"
-  },
+  
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
