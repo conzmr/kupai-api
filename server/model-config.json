@@ -66,5 +66,9 @@
   "RedeemedCoupon": {
     "dataSource": "kupaidb",
     "public": false
+  },
+  "Promotion": {
+    "dataSource": "kupaidb",
+    "public": true
   }
 }

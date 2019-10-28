@@ -5,6 +5,7 @@
   },
   "kupaidb": {
     "url": "mongodb+srv://kupai-admin:kupai@cluster0-uzkmh.mongodb.net/kupai?retryWrites=true&w=majority",
+    "name": "kupaidb",
     "connector": "mongodb"
   }
 }

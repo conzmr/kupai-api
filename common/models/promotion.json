@@ -1,0 +1,43 @@
+{
+  "name": "Promotion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "image": {
+      "type": "string"
+    },
+    "expirationDate": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "Restaurant",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
