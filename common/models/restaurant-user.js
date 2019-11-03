@@ -16,8 +16,11 @@ module.exports = function(Restaurantuser) {
       },
       function(err, role) {
         if (err) next(err);
-
-        if (role) {
+        else if(!role) {
+          console.log("RESTAURANT_ADMIN role not found. Role map not done.");
+          next();
+        }
+        else {
           RoleMapping.create(
             {
                 principalType: RoleMapping.USER,
@@ -25,11 +28,11 @@ module.exports = function(Restaurantuser) {
                 roleId: role.id
             },
             function(err, roleMapping) {
-                if (err) next(err);
-                next();
+                  if (err) next(err);
+                  next();
                 }
             );
-            }
+          }
         }
         );
     });

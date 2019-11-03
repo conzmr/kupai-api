@@ -17,8 +17,11 @@ module.exports = function(Admin) {
           },
           function(err, role) {
             if (err) next(err);
-    
-            if (role) {
+            else if(!role) {
+              console.log("ADMIN role not found. Role map not done.");
+              next();
+            }
+            else {
               RoleMapping.create(
                 {
                     principalType: RoleMapping.USER,

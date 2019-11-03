@@ -12,7 +12,7 @@ module.exports = app => {
           }
         },
         (err, role) => {
-          if (err) debug(err);
+          if (err) console.log(err);
           if (!role) {
             Role.create(
               {
@@ -50,7 +50,7 @@ module.exports = app => {
           }
         },
         (err, role) => {
-          if (err) debug(err);
+          if (err) console.log(err);
           if (!role) {
             Role.create(
               {
@@ -88,7 +88,7 @@ module.exports = app => {
         }
       },
       (err, role) => {
-        if (err) debug(err);
+        if (err) console.log(err);
         if (!role) {
           Role.create(
             {

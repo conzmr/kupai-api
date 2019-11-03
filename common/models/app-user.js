@@ -15,12 +15,12 @@ module.exports = function(Appuser) {
         }
       },
       function(err, role) {
-        console.log("HOLIS")
-        console.log("ROLE FIND ERROR", err)
-        console.log("ROLE FIND", role)
         if (err) next(err);
-
-        if (role) {
+        else if(!role) {
+          console.log("APP_USER role not found. Role map not done.");
+          next();
+        }
+        else {
           RoleMapping.create(
             {
                 principalType: RoleMapping.USER,
@@ -28,12 +28,12 @@ module.exports = function(Appuser) {
                 roleId: role.id
             },
             function(err, roleMapping) {
-                if (err) next(err);
-                next();
+                  if (err) next(err);
+                  next();
                 }
             );
-            }
+          }
         }
-        );
+      );
     });
 };
