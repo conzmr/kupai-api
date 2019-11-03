@@ -4,8 +4,20 @@
     "connector": "memory"
   },
   "kupaidb": {
-    "url": "mongodb+srv://kupai-admin:kupai@cluster0-uzkmh.mongodb.net/kupai?retryWrites=true&w=majority",
+    "host": "kupai-admin:kupai@cluster0-uzkmh.mongodb.net/kupai?retryWrites=false",
+    "database": "kupai",
+    "protocol": "mongodb+srv",
+    "connector": "mongodb"
+  },
+  "_kupaidb": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "kupai",
+    "password": "",
     "name": "kupaidb",
+    "user": "",
+    "useNewUrlParser": true,
     "connector": "mongodb"
   }
 }

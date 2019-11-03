@@ -1,0 +1,28 @@
+[
+    {
+        "createdAt": "2019-11-02T22:26:37.488Z",
+        "address": "Boulevard Puerta de Hierro 4965, Local FC-05",
+        "geolocation": {
+          "lat": 20.7107997,
+          "lng": -103.410703
+        },
+        "city": "Zapopan",
+        "country": "México",
+        "id": "5dbe0454a8f08b00042c98f0",
+        "restaurantId": "5da3a7e15fa37df146693121",
+        "alias": "Sucursal Andares"
+      },
+      {
+        "createdAt": "2019-11-02T22:26:37.488Z",
+        "alias": "Plaza Patria",
+        "address": "Av. Patria #1950, Jacarandas, 45160",
+        "geolocation": {
+          "lat": 20.7127876,
+          "lng": -103.3787737
+        },
+        "city": "Zapopan",
+        "country": "México",
+        "id": "5dbe7f18b0ac941b3f9db4ba",
+        "restaurantId": "5da3a7e15fa37df146693121"
+      }
+]

@@ -3,13 +3,17 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
   },
   "properties": {
     "createdAt": {
       "type": "date",
       "required": true,
       "defaultFn": "now"
+    },
+    "alias": {
+      "type": "string"
     },
     "logo": {
       "type": "string"
@@ -33,7 +37,17 @@
   "relations": {
     "restaurant": {
       "type": "belongsTo",
-      "model": "Restaurant",
+      "model": "RestaurantUser",
+      "foreignKey": ""
+    },
+    "promotions": {
+      "type": "hasMany",
+      "model": "Promotion",
+      "foreignKey": ""
+    },
+    "coupons": {
+      "type": "hasMany",
+      "model": "Coupon",
       "foreignKey": ""
     }
   },

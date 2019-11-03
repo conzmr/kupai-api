@@ -3,7 +3,8 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
   },
   "properties": {
     "createdAt": {
@@ -15,7 +16,15 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "discountType": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "number",
+      "required": true
+    },
+    "details": {
       "type": "string"
     },
     "active": {
@@ -34,6 +43,10 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "available": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

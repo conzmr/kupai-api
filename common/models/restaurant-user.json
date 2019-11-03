@@ -3,18 +3,34 @@
   "base": "User",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
   },
-  "properties": {},
+  "properties": {
+    "restaurantName": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {
-    "restaurants": {
-      "type": "hasOne",
-      "model": "Restaurant",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": false
-      }
+    "branches": {
+      "type": "hasMany",
+      "model": "Branch",
+      "foreignKey": ""
+    },
+    "coupons": {
+      "type": "hasMany",
+      "model": "Coupon",
+      "foreignKey": ""
+    },
+    "promotions": {
+      "type": "hasMany",
+      "model": "Promotion",
+      "foreignKey": ""
     }
   },
   "acls": [

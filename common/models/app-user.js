@@ -15,6 +15,9 @@ module.exports = function(Appuser) {
         }
       },
       function(err, role) {
+        console.log("HOLIS")
+        console.log("ROLE FIND ERROR", err)
+        console.log("ROLE FIND", role)
         if (err) next(err);
 
         if (role) {

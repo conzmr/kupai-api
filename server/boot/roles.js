@@ -1,5 +1,4 @@
 module.exports = app => {
-  return;
     let Role = app.models.Role;
     let RoleMapping = app.models.RoleMapping;
     let Admin = app.models.Admin;
