@@ -29,11 +29,21 @@ module.exports = function(Appuser) {
             },
             function(err, roleMapping) {
                   if (err) next(err);
-                  next();
+                  instance.accessTokens.create((err, accessToken)=>{
+                    if(err) next(err);
+                    accessToken.email = instance.email;
+                    ctx.result = accessToken;
+                    next();
+                  });
                 }
             );
           }
         }
       );
+    });
+
+    Appuser.afterRemote("login", function(ctx, instance, next) {
+      ctx.result.email = ctx.args.credentials.email;
+      next();
     });
 };

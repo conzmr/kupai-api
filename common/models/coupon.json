@@ -50,7 +50,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "branches": {
+      "type": "hasAndBelongsToMany",
+      "model": "Branch",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

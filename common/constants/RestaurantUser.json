@@ -1,0 +1,13 @@
+[
+    {
+        "restaurantName": "Fresh Salads",
+        "logo": "https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/freshsalads_FRESHSALADS.png",
+        "email": "fresh@salads.com",
+        "password": "freshsalads",
+        "id": "5dbfa179c7e4480004394fb0"
+    },
+    {
+        "restaurantName": "Uncle beef",
+        "logo": "http://unclebeef.com/images/logo.png"
+     }
+]

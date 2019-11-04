@@ -1,0 +1,25 @@
+{
+  "name": "UserCoupon",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "reedemedAt": {
+      "type": "date"
+    },
+    "expirationDate": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

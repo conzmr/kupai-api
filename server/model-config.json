@@ -70,5 +70,9 @@
   "Promotion": {
     "dataSource": "kupaidb",
     "public": true
+  },
+  "UserCoupon": {
+    "dataSource": "kupaidb",
+    "public": true
   }
 }

@@ -37,6 +37,14 @@
       "type": "belongsTo",
       "model": "Restaurant",
       "foreignKey": ""
+    },
+    "branches": {
+      "type": "hasAndBelongsToMany",
+      "model": "Branch",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

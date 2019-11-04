@@ -23,10 +23,12 @@
   "validations": [],
   "relations": {
     "coupons": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Coupon",
-      "foreignKey": "appUserId",
-      "through": "RedeemedCoupon"
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [

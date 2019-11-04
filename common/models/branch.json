@@ -41,14 +41,20 @@
       "foreignKey": ""
     },
     "promotions": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Promotion",
-      "foreignKey": ""
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     },
     "coupons": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Coupon",
-      "foreignKey": ""
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
