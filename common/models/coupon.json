@@ -51,13 +51,15 @@
   },
   "validations": [],
   "relations": {
-    "branches": {
-      "type": "hasAndBelongsToMany",
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "Restaurant",
+      "foreignKey": ""
+    },
+    "branch": { 
+      "type": "belongsTo",
       "model": "Branch",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     }
   },
   "acls": [],

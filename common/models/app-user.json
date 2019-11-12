@@ -12,6 +12,11 @@
       "required": true,
       "default": "$now"
     },
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "APP_USER"
+    },
     "email": {
       "type": "string",
       "required": true

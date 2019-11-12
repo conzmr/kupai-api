@@ -7,29 +7,16 @@
     "strictObjectIDCoercion": true
   },
   "properties": {
-    "restaurantName": {
+    "name": {
       "type": "string",
       "required": true
-    },
-    "logo": {
-      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "branches": {
-      "type": "hasMany",
-      "model": "Branch",
-      "foreignKey": ""
-    },
-    "coupons": {
-      "type": "hasMany",
-      "model": "Coupon",
-      "foreignKey": ""
-    },
-    "promotions": {
-      "type": "hasMany",
-      "model": "Promotion",
+    "restaurant": {
+      "type": "hasOne",
+      "model": "Restaurant",
       "foreignKey": ""
     }
   },

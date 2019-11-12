@@ -19,7 +19,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "appUser": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": ""
+    },
+    "coupon": {
+      "type": "belongsTo",
+      "model": "Coupon",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
