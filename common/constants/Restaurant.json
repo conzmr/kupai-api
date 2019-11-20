@@ -6,6 +6,22 @@
     },
     {
         "name": "Uncle beef",
-        "logo": "http://unclebeef.com/images/logo.png"
-     }
+        "logo": "http://unclebeef.com/images/logo.png",
+        "id": "5dd4bf1614201f0004f45347"
+      },
+     {
+        "name": "Tokai",
+        "logo": "http://www.solairamexico.mx/wp-content/uploads/2017/09/tokai-sushi-barra.jpg",
+        "id": "5dd4bec714201f0004f45346"
+      },
+      {
+        "name": "Outback",
+        "logo": "https://cdn.dribbble.com/users/2101163/screenshots/4215462/outback-logo.png",
+        "id": "5dd4bf5614201f0004f45348"
+      },
+      {
+        "name": "Pizza del perro negro",
+        "logo": "https://www.pizzadelperronegro.com/img/logoperro2.jpg",
+        "id": "5dd4c44414201f0004f4534b"
+      }
 ]

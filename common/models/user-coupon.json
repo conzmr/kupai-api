@@ -6,16 +6,13 @@
     "validateUpsert": true
   },
   "properties": {
+    "createdAt": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    },
     "reedemedAt": {
       "type": "date"
-    },
-    "expirationDate": {
-      "type": "date"
-    },
-    "active": {
-      "type": "boolean",
-      "required": true,
-      "default": true
     }
   },
   "validations": [],
@@ -28,6 +25,16 @@
     "coupon": {
       "type": "belongsTo",
       "model": "Coupon",
+      "foreignKey": ""
+    },
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "Restaurant",
+      "foreignKey": ""
+    },
+    "branch": { 
+      "type": "belongsTo",
+      "model": "Branch",
       "foreignKey": ""
     }
   },

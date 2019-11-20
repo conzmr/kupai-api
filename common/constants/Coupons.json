@@ -1,12 +1,29 @@
 [
     {
-        "title": "Descuento en el total de tu compra",
-        "discountType": "DISCOUNT",
+        "createdAt": "2019-11-20T05:20:41.694Z",
+        "discountType": "PERCENTAGE",
         "value": 30,
-        "details": "Válido de lunes a viernes",
-        "code": "QN7CWE9D2",
+        "details": "Descuento en el total de tu compra. Válido de lunes a viernes. Consumo mínimo $100.00",
+        "active": true,
+        "expirationDate": "2019-12-10T06:00:00.000Z",
         "available": 100,
-        "reusable": false,
-        "expirationDate": "2019-12-10T06:00:00.000Z"
-    }
+        "id": "5dd4cd29868e372e91fc9f6f",
+        "restaurantId": "5dd4c44414201f0004f4534b",
+        "branchId": "5dd4c47814201f0004f4534c",
+        "code": "QN7CWE9D2",
+        "reusable": false
+    },
+    {
+        "createdAt": "2019-11-20T05:27:44.577Z",
+        "discountType": "MONETARY",
+        "value": 150,
+        "details": "Válido de lunes a domingo antes de las 4:00 pm. Compra mínima de $250.00 ",
+        "active": true,
+        "expirationDate": "2019-12-15T06:00:00.000Z",
+        "available": 50,
+        "id": "5dd4ced0c84ab92ee9f92157",
+        "restaurantId": "5da3a7e15fa37df146693121",
+        "branchId": "5dbe7f18b0ac941b3f9db4ba",
+        "code": "ZN7CRTBC0"
+      }
 ]

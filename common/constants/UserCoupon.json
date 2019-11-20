@@ -1,0 +1,19 @@
+[
+    {
+      "createdAt": "2019-11-20T05:36:03.000Z",
+      "id": "5dd4cda4c84ab92ee9f92156",
+      "appUserId": "5dbe738882aa0014c2297a40",
+      "couponId": "5dd4cd29868e372e91fc9f6f",
+      "restaurantId": "5dd4c44414201f0004f4534b",
+      "branchId": "5dd4c47814201f0004f4534c"
+    },
+    {
+      "createdAt": "2019-11-20T05:36:03.001Z",
+      "reedemedAt": "2019-11-18T05:11:46.039Z",
+      "id": "5dd4cf1cc84ab92ee9f92158",
+      "appUserId": "5dbe738882aa0014c2297a40",
+      "couponId": "5dd4ced0c84ab92ee9f92157",
+      "restaurantId": "5da3a7e15fa37df146693121",
+      "branchId": "5dbe7f18b0ac941b3f9db4ba"
+    }
+  ]

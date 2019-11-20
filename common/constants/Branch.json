@@ -24,5 +24,42 @@
         "country": "México",
         "id": "5dbe7f18b0ac941b3f9db4ba",
         "restaurantId": "5da3a7e15fa37df146693121"
+      },
+      {
+        "createdAt": "2019-11-20T04:39:47.645Z",
+        "alias": "Plaza Andares",
+        "address": "144, Av. Patria 2085, Puerta de Hierro, 45116 Zapopan, Jal.",
+        "geolocation": {
+          "lat": 20.709863,
+          "lng": -103.41264
+        },
+        "city": "Zapopan",
+        "country": "México",
+        "id": "5dd4c39314201f0004f45349",
+        "restaurantId": "5dd4bf5614201f0004f45348"
+      },
+      {
+        "createdAt": "2019-11-20T04:41:11.510Z",
+        "address": "Av Sta Margarita 5010-12, Valle Esmeralda, 45136 Zapopan, Jal.",
+        "geolocation": {
+          "lat": 20.731008,
+          "lng": -103.443018
+        },
+        "city": "Zapopan",
+        "country": "México",
+        "id": "5dd4c3e714201f0004f4534a",
+        "restaurantId": "5dd4bec714201f0004f45346"
+      },
+      { 
+        "createdAt": "2019-11-11T03:43:33.466Z",
+        "address": "Av. de la Paz 1925, Col Americana, Americana, 44160 Guadalajara, Jal.",
+        "geolocation": {
+          "lat": 20.672487,
+          "lng": -103.367019
+        },
+        "city": "Guadalajara",
+        "country": "México",
+        "id": "5dd4c47814201f0004f4534c",
+        "restaurantId": "5dd4c44414201f0004f4534b"
       }
 ]

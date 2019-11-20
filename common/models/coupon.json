@@ -12,10 +12,6 @@
       "required": true,
       "default": "$now"
     },
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "discountType": {
       "type": "string",
       "required": true
@@ -34,15 +30,6 @@
     },
     "expirationDate": {
       "type": "date"
-    },
-    "code": {
-      "type": "string",
-      "required": true
-    },
-    "reusable": {
-      "type": "boolean",
-      "required": true,
-      "default": false
     },
     "available": {
       "type": "number",

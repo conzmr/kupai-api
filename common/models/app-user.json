@@ -28,12 +28,9 @@
   "validations": [],
   "relations": {
     "coupons": {
-      "type": "hasAndBelongsToMany",
-      "model": "Coupon",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "type": "hasMany",
+      "model": "UserCoupon",
+      "foreignKey": "appUserId"
     }
   },
   "acls": [
@@ -54,6 +51,14 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": [
+        "__get__coupons"
+      ]
     }
   ],
   "methods": {}
