@@ -1,8 +1,6 @@
 module.exports = app => {
     let Role = app.models.Role;
     let RoleMapping = app.models.RoleMapping;
-    let Admin = app.models.Admin;
-    let RestaurantUser = app.models.RestaurantUser;
     let AppUser = app.models.AppUser;
   
     Role.findOne(
@@ -21,7 +19,9 @@ module.exports = app => {
               (err, role) => {
                 if (err) {
                 } else {
-                  Admin.find({}, (err, users) => {
+                  AppUser.find({
+                    type: "ADMIN"
+                  }, (err, users) => {
                     for (var u in users) {
                       role.principals.create(
                         {
@@ -59,7 +59,9 @@ module.exports = app => {
               (err, role) => {
                 if (err) {
                 } else {
-                  RestaurantUser.find({}, (err, users) => {
+                  AppUser.find({
+                    type: "RESTAURANT_ADMIN"
+                  }, (err, users) => {
                     for (var u in users) {
                       role.principals.create(
                         {
@@ -97,7 +99,9 @@ module.exports = app => {
             (err, role) => {
               if (err) {
               } else {
-                AppUser.find({}, (err, users) => {
+                AppUser.find({
+                  type: "APP_USER"
+                }, (err, users) => {
                   for (var u in users) {
                     role.principals.create(
                       {

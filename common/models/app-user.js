@@ -11,13 +11,13 @@ module.exports = function(Appuser) {
     Role.findOne(
       {
         where: {
-          name: "APP_USER"
+          name: instance.type
         }
       },
       function(err, role) {
         if (err) next(err);
         else if(!role) {
-          console.log("APP_USER role not found. Role map not done.");
+          console.log(instance.type+" role not found. Role map not done.");
           next();
         }
         else {
@@ -42,8 +42,8 @@ module.exports = function(Appuser) {
       );
     });
 
-    Appuser.afterRemote("login", function(ctx, instance, next) {
-      ctx.result.email = ctx.args.credentials.email;
-      next();
-    });
+    // Appuser.afterRemote("login", function(ctx, instance, next) {
+    //   ctx.result.email = ctx.args.credentials.email;
+    //   next();
+    // });
 };
