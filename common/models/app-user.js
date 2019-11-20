@@ -31,8 +31,8 @@ module.exports = function(Appuser) {
                   if (err) next(err);
                   instance.accessTokens.create((err, accessToken)=>{
                     if(err) next(err);
-                    accessToken.email = instance.email;
-                    ctx.result = accessToken;
+                    var result = {accessToken, user: instance};
+                    ctx.result = result;
                     next();
                   });
                 }
@@ -41,9 +41,4 @@ module.exports = function(Appuser) {
         }
       );
     });
-
-    // Appuser.afterRemote("login", function(ctx, instance, next) {
-    //   ctx.result.email = ctx.args.credentials.email;
-    //   next();
-    // });
 };
