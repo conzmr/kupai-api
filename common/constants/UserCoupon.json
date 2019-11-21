@@ -15,5 +15,14 @@
       "couponId": "5dd4ced0c84ab92ee9f92157",
       "restaurantId": "5da3a7e15fa37df146693121",
       "branchId": "5dbe7f18b0ac941b3f9db4ba"
-    }
+    },
+    {
+        "createdAt": "2019-11-20T08:20:39.399Z",
+        "id": "5dd4f757465fd639afbac378",
+        "appUserId": "5dbe738882aa0014c2297a40",
+        "couponId": "5dd4f6d3b736313974ea0720",
+        "restaurantId": "5dd4bec714201f0004f45346",
+        "branchId": "5dd4c3e714201f0004f4534a",
+        "code": "UNLKRTBC0"
+      }
   ]

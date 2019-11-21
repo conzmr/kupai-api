@@ -25,5 +25,17 @@
         "restaurantId": "5da3a7e15fa37df146693121",
         "branchId": "5dbe7f18b0ac941b3f9db4ba",
         "code": "ZN7CRTBC0"
+      },
+      {
+        "createdAt": "2019-11-20T08:18:27.916Z",
+        "discountType": "PERCENTAGE",
+        "value": 50,
+        "details": "Cupón de descuento aplicable en rollos de lunes a jueves. Válido de lunes a jueves de 4:30 pm a 7:00 pm.",
+        "active": true,
+        "expirationDate": "2019-12-15T06:00:00.000Z",
+        "available": 30,
+        "id": "5dd4f6d3b736313974ea0720",
+        "restaurantId": "5dd4bec714201f0004f45346",
+        "branchId": "5dd4c3e714201f0004f4534a"
       }
 ]

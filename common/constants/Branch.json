@@ -32,7 +32,7 @@
         "geolocation": {
           "lat": 20.709863,
           "lng": -103.41264
-        },
+        },  
         "city": "Zapopan",
         "country": "México",
         "id": "5dd4c39314201f0004f45349",
@@ -40,6 +40,7 @@
       },
       {
         "createdAt": "2019-11-20T04:41:11.510Z",
+        "alias": "Santa Margarita",
         "address": "Av Sta Margarita 5010-12, Valle Esmeralda, 45136 Zapopan, Jal.",
         "geolocation": {
           "lat": 20.731008,

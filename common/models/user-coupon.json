@@ -11,6 +11,10 @@
       "required": true,
       "default": "$now"
     },
+    "code": {
+      "type": "string",
+      "required": true
+    },
     "reedemedAt": {
       "type": "date"
     }

@@ -31,7 +31,8 @@ module.exports = function(Appuser) {
                   if (err) next(err);
                   instance.accessTokens.create((err, accessToken)=>{
                     if(err) next(err);
-                    var result = {accessToken, user: instance};
+                    let result = accessToken.toJSON();
+                    result.user = instance;
                     ctx.result = result;
                     next();
                   });
