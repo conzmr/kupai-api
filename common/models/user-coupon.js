@@ -14,6 +14,7 @@ module.exports = function(Usercoupon) {
 
             let todaysCoupon = await Usercoupon.findOne({
                 where: {
+                    appUserId: userId,
                     createdAt: {
                         gte: moment().startOf('day').toDate(),
                         lte: moment().endOf('day').toDate()
@@ -80,23 +81,16 @@ module.exports = function(Usercoupon) {
 
                 var coupon = coupons.pop();
 
-                // var newCoupon = await Usercoupon.create({
-                //     branchId: coupon.branchId,
-                //     restaurantId: coupon.restaurantId,
-                //     couponId: coupon._id, 
-                //     userId: userId,
-                //     code: Math.random().toString(36).slice(4).toUpperCase()
-                // });
-                //return newCoupon;
-                
-                console.log("COUPON  DS", coupon)
-                return ({
-                  branchId: coupon.branchId,
-                  restaurantId: coupon.restaurantId,
-                  couponId: coupon._id, 
-                  userId: userId,
-                  code: Math.random().toString(36).slice(5).toUpperCase()
-              })
+                var newCoupon = await Usercoupon.create({
+                    branchId: coupon.branchId,
+                    restaurantId: coupon.restaurantId,
+                    couponId: coupon._id, 
+                    appUserId: userId,
+                    code: Math.random().toString(36).slice(4).toUpperCase()
+                });
+
+                var dailyCoupon = await Usercoupon.findById(newCoupon.id);
+                return dailyCoupon;
             
         } catch (error) {
             throw (error);

@@ -5,6 +5,19 @@
   "options": {
     "validateUpsert": true
   },
+  "scope": {
+    "include": [
+      {
+        "relation": "coupon"
+      },
+      {
+        "relation": "branch"
+      },
+      {
+        "relation": "restaurant"
+      }
+    ]
+  },
   "properties": {
     "createdAt": {
       "type": "date",
