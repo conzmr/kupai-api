@@ -45,5 +45,45 @@
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "findByLocation": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "lat",
+          "type": "number",
+          "required": true,
+          "description": "Latitude."
+        },
+        {
+          "arg": "lng",
+          "type": "number",
+          "required": true,
+          "description": "Longitude."
+        },
+        {
+          "arg": "tagName",
+          "type": "string",
+          "required": false,
+          "description": "Tag or name for match it in the search. "
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": {
+        "root": "true",
+        "type": "object"
+      },
+      "description": "Find promotions based on coordinate and category",
+      "http": [
+        {
+          "path": "/findByLocation",
+          "verb": "get"
+        }
+      ]
+    }
+  }
 }

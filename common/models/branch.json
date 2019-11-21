@@ -26,6 +26,10 @@
       "type": "geopoint",
       "required": true
     },
+    "location": {
+      "type": "object",
+      "required": true
+    },
     "city": {
       "type": "string"
     },
