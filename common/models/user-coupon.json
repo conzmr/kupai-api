@@ -42,6 +42,55 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
-  "methods": {}
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "APP_USER",
+      "permission": "ALLOW",
+      "property": [
+        "getDailyCoupon"
+      ]
+    }
+  ],
+  "methods": {
+    "getDailyCoupon": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "lat",
+          "type": "number",
+          "required": true,
+          "description": "Latitude."
+        },
+        {
+          "arg": "lng",
+          "type": "number",
+          "required": true,
+          "description": "Longitude."
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "returns": {
+        "root": "true",
+        "type": "object"
+      },
+      "description": "Find daily coupon",
+      "http": [
+        {
+          "path": "/getDailyCoupon",
+          "verb": "get"
+        }
+      ]
+    }
+  }
 }

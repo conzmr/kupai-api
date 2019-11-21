@@ -9,5 +9,25 @@
        "restaurantId": "5da3a7e15fa37df146693121",
        "restaurantUserId": "5dbfa179c7e4480004394fb0",
        "branchId": "5dbe7f18b0ac941b3f9db4ba"
-    }
+    },
+    {
+        "title": "Promoción a domicilio",
+        "description": "Si pides una especialidad mediana antes de las 10pm te regalamos una entrada",
+        "image": "http://quieromexico.com/resources/lugar/04-restaurantes/centro-historico/17-pizza-perro-negro/05.jpg",
+        "createdAt": "2019-11-04T03:50:45.613Z",
+        "expirationDate": "2019-12-04T03:50:45.613Z",
+        "active": true,
+        "restaurantId": "5dd4c44414201f0004f4534b",
+        "branchId": "5dd4c47814201f0004f4534c"
+     },
+     {
+        "title": "Promoción a domicilio",
+        "description": "Si pides una especialidad mediana antes de las 10pm te regalamos una entrada",
+        "image": "http://quieromexico.com/resources/lugar/04-restaurantes/centro-historico/17-pizza-perro-negro/05.jpg",
+        "createdAt": "2019-11-04T03:50:45.613Z",
+        "expirationDate": "2019-12-04T03:50:45.613Z",
+        "active": true,
+        "restaurantId": "5dd4c44414201f0004f4534b",
+        "branchId": "5dd4c47814201f0004f4534c"
+     }
 ]
