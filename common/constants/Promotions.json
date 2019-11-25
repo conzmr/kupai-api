@@ -21,13 +21,23 @@
         "branchId": "5dd4c47814201f0004f4534c"
      },
      {
-        "title": "Promoción a domicilio",
-        "description": "Si pides una especialidad mediana antes de las 10pm te regalamos una entrada",
-        "image": "http://quieromexico.com/resources/lugar/04-restaurantes/centro-historico/17-pizza-perro-negro/05.jpg",
+        "title": "De lunes a jueves rollos al 2 x 1",
+        "description": "Válido en la compra de dos bebidas u otro platillo adicional",
+        "image": "http://www.sushiclub.co.za/media/k2/items/cache/27b4275cdf67fac8ef7af010ec180724_XL.jpg",
         "createdAt": "2019-11-04T03:50:45.613Z",
-        "expirationDate": "2019-12-04T03:50:45.613Z",
+        "expirationDate": "2019-12-22T03:50:45.613Z",
         "active": true,
-        "restaurantId": "5dd4c44414201f0004f4534b",
-        "branchId": "5dd4c47814201f0004f4534c"
-     }
+        "restaurantId": "5dd4bec714201f0004f45346",
+        "branchId": "5dd4c3e714201f0004f4534a"
+     },
+     {
+      "title": "Festival navideño: 25% de descuento al pagar con tus tarjetas",
+      "description": "10% de descuento + 15% de devolución*. Promoción válida de jueves a domingo. No participan Visa Empresarial ni Línea Efectivo. Tope máximo de devolución $1,500.00.",
+      "image": "https://az727346.vo.msecnd.net/content/images/about-menu.jpg",
+      "createdAt": "2020-01-15T03:50:45.613Z",
+      "expirationDate": "2019-12-22T03:50:45.613Z",
+      "active": true,
+      "restaurantId": "5dd4bf5614201f0004f45348",
+      "branchId": "5dd4c39314201f0004f45349"
+   }
 ]
