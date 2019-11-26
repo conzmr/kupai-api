@@ -2,17 +2,30 @@
 
 module.exports = function(Promotion) {
 
-    Promotion.findByLocation = function (lat, lng, tagName, options, cb) {
+    Promotion.findByLocation = function (lat, lng, category, options, cb) {
         Promotion.getDataSource().connector.connect(function(err, db) {
-            var collection = db.collection('Branch');
+            const collection = db.collection('Branch');
+            const matchCategory = category? {
+              $match:
+                { $expr:
+                   { $and:
+                      [
+                        { $eq: [ "$category.name",  category ] }
+                      ]
+                   }
+                },
+            } : {
+                $addFields: {
+                  allCategories: true
+                }
+            };
             collection.aggregate(
               [
                 {
                     $geoNear: {
                         near: { type: "Point", coordinates: [ lng , lat ] },
                         key: "location",
-                        distanceField: "distance",
-                    //  query: { "category": "Something" }
+                        distanceField: "distance"
                     }
                 },
                 {
@@ -54,15 +67,31 @@ module.exports = function(Promotion) {
                  },
                  { $unwind: "$restaurant"},
                  {
-                    $lookup:
-                      {
-                        from: "Branch",
-                        localField: "branchId",
-                        foreignField: "_id",
-                        as: "branch"
-                      }
+                    $addFields: {
+                      categoryId: "$restaurant.categoryId"
+                    }
                  },
-                 { $unwind: "$branch"}
+                 {
+                  $lookup:
+                    {
+                      from: "Category",
+                      localField: "categoryId",
+                      foreignField: "_id",
+                      as: "category"
+                    }
+                  },
+                  { $unwind: "$category"},
+                  matchCategory,
+                  {
+                      $lookup:
+                        {
+                          from: "Branch",
+                          localField: "branchId",
+                          foreignField: "_id",
+                          as: "branch"
+                        }
+                  },
+                  { $unwind: "$branch"}
               ]).toArray(function(err,promotions){
                   if(err) return cb(err);
                   else return cb(null,promotions);

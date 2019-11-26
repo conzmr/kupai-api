@@ -1,38 +1,62 @@
 [
     {
-        "name": "Pizza"
+      "name": "Pizza",
+      "image": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg",
+      "id": "5ddc97cee0626c0004f03b1e"
     },
     {
-        "name": "Hamburguesas"
+      "name": "Hamburguesas",
+      "image": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/07/hamburguesahawaiana.jpg",
+      "id": "5ddc97cee0626c0004f03b1f"
     },
     {
-        "name": "Sushi"
+      "name": "Sushi",
+      "image": "https://www.thespruceeats.com/thmb/8SyyPw7aCSce8XFeXvDtA9_xcAc=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/183341110-56a541b93df78cf772875a55.jpg",
+      "id": "5ddc97cee0626c0004f03b20"
     },
     {
-        "name": "Alitas"
+      "name": "Alitas",
+      "image": "https://www.dondeir.com/wp-content/uploads/2016/12/donde-comer-alitas-c.jpg",
+      "id": "5ddc97cee0626c0004f03b21"
     },
     {
-        "name": "Pollo"
+      "name": "Pollo",
+      "image": "https://1fx.es/spvm/5453.jpg",
+      "id": "5ddc97cee0626c0004f03b22"
     },
     {
-        "name": "Pescados/Mariscos"
+      "name": "Pescados/Mariscos",
+      "image": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/01/recetas-de-mariscos-cuaresma.jpg",
+      "id": "5ddc97cee0626c0004f03b23"
     },
     {
-        "name": "Internacional"
+      "name": "Internacional",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/07/88/56/19/ponderosa-steakhouse.jpg",
+      "id": "5ddc97cee0626c0004f03b24"
     },
     {
-        "name": "Mexicana"
+      "name": "Mexicana",
+      "image": "https://www.matchingfoodandwine.com/files/blogattachments/top/tacos-in-mexico-city-%C2%A9marcos@2x.jpg",
+      "id": "5ddc97cee0626c0004f03b25"
     },
     {
-        "name": "Italiana"
+      "name": "Italiana",
+      "image": "https://www.easyrentcars.com/blog/wp-content/uploads/2019/08/famous-Italian-food-Lasagna.jpg",
+      "id": "5ddc97cee0626c0004f03b26"
     },
     {
-        "name": "Carnes"
+      "name": "Carnes",
+      "image": "https://cdnph.upi.com/svc/sv/i/3451447074562/2015/1/14470799676529/Meat-cooked-at-high-temperatures-increases-cancer-risk.jpg",
+      "id": "5ddc97cee0626c0004f03b27"
     },
     {
-        "name": "Saludable"
+      "name": "Saludable",
+      "image": "https://okdiario.com/img/2019/08/10/receta-de-ensalada-con-aguacate-y-pollo-asado-1-655x368.jpg",
+      "id": "5ddc97cee0626c0004f03b28"
     },
     {
-        "name": "China"
-    } 
-]
+      "name": "China",
+      "image": "https://i.ndtvimg.com/i/2016-06/chinese-625_625x350_81466064119.jpg",
+      "id": "5ddc97cee0626c0004f03b29"
+    }
+  ]
